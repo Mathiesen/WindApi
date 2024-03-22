@@ -5,6 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.Date;
 
 public class Day {
+    // Hello 
     @SerializedName("avg_wind_effect")
     public double averageWindEffect;
     @SerializedName("avg_solar_effect")
