@@ -28,5 +28,11 @@ public class Main {
         LatestReading reading = gson.fromJson(jObj.get("latest_reading").toString(), LatestReading.class);
 
         System.out.println(reading.data.turbines);
+
+        for (String s : reading.data.turbines.keySet()) {
+            System.out.println(s);
+        }
+
+
     }
 }
