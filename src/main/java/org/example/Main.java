@@ -26,5 +26,7 @@ public class Main {
         Gson gson = new Gson();
         JsonObject jObj = JsonParser.parseString(response.body()).getAsJsonObject();
         LatestReading reading = gson.fromJson(jObj.get("latest_reading").toString(), LatestReading.class);
+
+        System.out.println(reading.data.turbines);
     }
 }
