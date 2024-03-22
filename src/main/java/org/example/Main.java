@@ -29,5 +29,7 @@ public class Main {
 
         GraphData gd = new GraphData();
         gd.setNumber(1);
+
+        System.out.println(gd.getNumber());
     }
 }
