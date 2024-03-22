@@ -27,15 +27,7 @@ public class Main {
         JsonObject jObj = JsonParser.parseString(response.body()).getAsJsonObject();
         LatestReading reading = gson.fromJson(jObj.get("latest_reading").toString(), LatestReading.class);
 
-        System.out.println(reading.data.turbines);
-
-        for (String s : reading.data.turbines.keySet()) {
-            System.out.println(s);
-        }
-
-
-        reading.data.turbines.put("8", 1200);
-        reading.data.turbines.put("9", 1500);
-        System.out.println(reading.data.turbines.get("8"));
+        GraphData gd = new GraphData();
+        gd.setNumber(1);
     }
 }
