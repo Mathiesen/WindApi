@@ -28,5 +28,8 @@ public class Main {
         LatestReading reading = gson.fromJson(jObj.get("latest_reading").toString(), LatestReading.class);
 
         System.out.println(reading.data.turbines);
+        reading.data.turbines.put("8", 1200);
+        reading.data.turbines.put("9", 1500);
+        System.out.println(reading.data.turbines.get("8"));
     }
 }
