@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException, ApiException {
         HttpClient client = HttpClient.newBuilder().build();
 
+        // Create http request
        HttpRequest request = HttpRequest
                 .newBuilder()
                 .uri(new URI("https://vind-og-klima-app.videnomvind.dk/api/stats?location=vindtved"))
