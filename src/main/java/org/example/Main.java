@@ -34,5 +34,8 @@ public class Main {
         }
 
 
+        reading.data.turbines.put("8", 1200);
+        reading.data.turbines.put("9", 1500);
+        System.out.println(reading.data.turbines.get("8"));
     }
 }
